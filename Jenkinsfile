@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        
-    }
+    agent any
     environment {
         PYTHON_ENV ='C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\' 
     }
