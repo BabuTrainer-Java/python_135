@@ -1,28 +1,15 @@
-pipeline {
+pipeline{
     agent any
-    environment {
-        PYTHON_ENV ='C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\' 
-    }
     stages {
-        stage('Checkout') {
+        stage('version') {
             steps {
-                // Checkout your repository
-                git 'https://github.com/your-repo.git'
+                sh 'python --version'
             }
         }
-        stage('Install Dependencies') {
+        stage('hello') {
             steps {
-                // Install Python dependencies
-                bat "${env.PYTHON_ENV}\\Scripts\\pip install -r requirements.txt"
+                sh 'python demo.py'
             }
         }
-        stage('Run Python Script') {
-            steps {
-                // Run your Python script
-                bat "${env.PYTHON_ENV}\\Scripts\\python demo.py"
-            }
-        }
-    
-       
-}
+    }
 }
