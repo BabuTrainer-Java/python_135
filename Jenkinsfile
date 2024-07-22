@@ -3,7 +3,7 @@ pipeline {
         label 'windows' // Replace 'windows' with your actual node label
     }
     environment {
-        PYTHON_ENV ='C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\' # Update this path to your Python environment
+        PYTHON_ENV ='C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\' 
     }
     stages {
         stage('Checkout') {
