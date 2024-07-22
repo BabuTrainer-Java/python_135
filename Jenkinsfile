@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'windows' // Replace 'windows' with your actual node label
+        
     }
     environment {
         PYTHON_ENV ='C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\' 
