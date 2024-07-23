@@ -1,12 +1,16 @@
-pipeline {
+pipeline{
     agent any
     stages {
-        stage('build') {
-    steps {
-        sh 'python demo.py'
+        stage('version') {
+            steps {
+                sh 'python --version'
+            }
+        }
+        stage('hello') {
+            steps {
+                sh 'python hello.py'
+            }
+        }
     }
 }
 
-        
-    }
-}   
