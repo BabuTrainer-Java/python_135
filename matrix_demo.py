@@ -9,7 +9,7 @@ thr_d=n1.array([[[1,2,3],[4,5,6],[7,8,9]]])
 print("Thr_d::",thr_d.ndim ,":::",type(thr_d))
 higher_d=n1.array([1,2,3],ndmin=10)
 print("higher_d::",higher_d.ndim ,":::",type(higher_d),":::",higher_d)
-
+===========================================================
 
 
 
